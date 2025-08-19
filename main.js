@@ -71,7 +71,10 @@ client.on('messageCreate', async message => {
         console.error(error);
         message.reply('⚠️ There was an error trying to execute that command!');
     }
+
+require('./port');
 });
 
 
 client.login(process.env.TOKEN);
+
